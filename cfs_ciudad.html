@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ciudades de Guanajuato</title>
+    <style>
+        /* encabezado superior */
+        .encabezado {
+            background-color: lightblue;
+            text-align: right;
+            padding: 20px;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+
+        /* tabla general */
+        table {
+            width: 75%; /* (2da parte punto 6) */
+            border-collapse: collapse;
+        }
+        th, td {
+            border: 1px solid black;
+        }
+
+        /* estilos especiales */
+        .crema { background-color: #f5f5dc; } /* fila encabezados */
+        .fondorojo { background-color: #ff9999; }
+        .fondoazul { background-color: #99ccff; }
+        #bordeverde { border: 6px solid green; }
+        .espacio { border-spacing: 4px; } /* entre celdas */
+        #espaciado { padding: 25px; } /* padding dentro de celdas */
+
+        /* imágenes */
+        .imagen {
+            width: 150px;
+            border-radius: 10px;
+        }
+        #logo {
+            width: 120px;
+            display: block;
+            margin: 0 auto; /* centrado horizontal */
+        }
+
+        /* textos */
+        .italica { font-style: italic; text-align: justify; }
+        .alcalde { vertical-align: bottom; } /* texto del alcalde al fondo */
+
+        /* título inferior */
+        .titulo {
+            font-family: "Brush Script MT", cursive;
+            display: flex;
+            justify-content: space-between;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+   <header>
+    <!-- encabezado -->
+    <h1 class="encabezado">Carlos Fabian Saavedra</h1> 
+    <h1>5PRBM</h1>
+   </header> 
+
+   <table id="bordeverde" class="espacio">
+    <tr class="crema">
+        <th colspan="2"><h3>Irapuato</h3></th>
+        <th><h3>San Miguel</h3></th> 
+        <th colspan="2"><h3>Guanajuato</h3></th>
+    </tr>
+    <tr>
+        <td class="italica fondorojo">Parque Irekua, uno de los espacios más verdes de la ciudad.</td> 
+        <td class="italica fondoazul">Templo del Hospitalito, joya histórica de Irapuato.</td> 
+        <td rowspan="3"><img src="Sanmiguel.jpg" alt="San Miguel" class="imagen"></td> 
+        <td class="italica">Alhóndiga de Granaditas, símbolo de la Independencia.</td>
+        <td class="italica">Teatro Juárez, un ícono cultural del estado.</td>
+    </tr>
+    <tr>
+        <td class="italica fondorojo">Zoológico de Irapuato, ideal para la familia.</td> 
+        <td class="italica fondoazul">Plaza Principal con su fuente de aguas danzarinas.</td> 
+        <td class="italica">Universidad de Guanajuato, referente educativo.</td> 
+        <td class="italica">Museo Iconográfico del Quijote.</td>
+    </tr>
+    <tr>
+        <td class="italica fondorojo">Fuente de los Delfines, ubicada en el centro histórico.</td> 
+        <td class="italica fondoazul">Estadio Sergio León Chávez, casa del fútbol local.</td>
+        <td class="alcalde">Juan Pérez López</td> <!-- alcalde -->
+        <td rowspan="2"><img src="logo.jpg" alt="Logo" id="logo"></td>
+    </tr>
+    <tr>
+        <td class="italica fondorojo">Museo de la Ciudad, con piezas arqueológicas.</td> 
+        <td class="italica fondoazul">Mercado Miguel Hidalgo, tradición gastronómica.</td>
+        <td class="italica">Irapuato es reconocida como la capital mundial de las fresas.</td>
+        <td>
+            <ol type="I">
+                <li>Enchiladas mineras</li>
+                <li>Cajeta</li>
+                <li>Fresas con crema</li>
+                <li>Chiles en nogada</li>
+                <li>Tamales de ceniza</li>
+                <li>Guacamayas</li>
+            </ol>
+        </td>
+    </tr>
+   </table>
+
+   <div class="titulo">
+        <span>Ciudades de Guanajuato</span>
+        <span>21/09/2025</span>
+   </div>
+
+</body>
+</html>
